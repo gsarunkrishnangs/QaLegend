@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-16T02:46:13 IST" name="QaLegend Suite" finished-at="2024-06-16T02:46:52 IST" duration-ms="38744">
+    <groups>
+      <group name="Sanity">
+        <method signature="HomePageTest.VerifyHomePageTitle()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" name="VerifyHomePageTitle" class="com.qalegend.tests.HomePageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="HomePageTest.verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" name="verifyUserLoginDate" class="com.qalegend.tests.HomePageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-06-16T02:46:13 IST" name="Edge Test" finished-at="2024-06-16T02:46:52 IST" duration-ms="38744">
+      <class name="com.qalegend.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:13 IST" name="setup" finished-at="2024-06-16T02:46:21 IST" duration-ms="8318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://qalegend.com/billing/public/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyHomePageTitle()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:21 IST" name="VerifyHomePageTitle" finished-at="2024-06-16T02:46:25 IST" duration-ms="3835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageTitle -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:25 IST" name="closeBrowser" finished-at="2024-06-16T02:46:27 IST" duration-ms="1392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyHomePageTitle status=SUCCESS method=HomePageTest.VerifyHomePageTitle()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:27 IST" name="setup" finished-at="2024-06-16T02:46:33 IST" duration-ms="6340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://qalegend.com/billing/public/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:33 IST" name="verifyUserLoginDate" finished-at="2024-06-16T02:46:36 IST" duration-ms="2680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginDate -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a]" started-at="2024-06-16T02:46:36 IST" name="closeBrowser" finished-at="2024-06-16T02:46:37 IST" duration-ms="1383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginDate status=SUCCESS method=HomePageTest.verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qalegend.tests.HomePageTest -->
+      <class name="com.qalegend.tests.ProductsPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.ProductsPageTest@1189dd52]" started-at="2024-06-16T02:46:37 IST" name="setup" finished-at="2024-06-16T02:46:43 IST" duration-ms="5626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://qalegend.com/billing/public/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyProductsFilter()[pri:0, instance:com.qalegend.tests.ProductsPageTest@1189dd52]" started-at="2024-06-16T02:46:43 IST" name="VerifyProductsFilter" finished-at="2024-06-16T02:46:50 IST" duration-ms="7841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductsFilter -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.ProductsPageTest@1189dd52]" started-at="2024-06-16T02:46:50 IST" name="closeBrowser" finished-at="2024-06-16T02:46:52 IST" duration-ms="1297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyProductsFilter status=SUCCESS method=ProductsPageTest.VerifyProductsFilter()[pri:0, instance:com.qalegend.tests.ProductsPageTest@1189dd52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qalegend.tests.ProductsPageTest -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- QaLegend Suite -->
+</testng-results>
