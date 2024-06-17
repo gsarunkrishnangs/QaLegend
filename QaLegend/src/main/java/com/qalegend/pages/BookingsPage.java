@@ -11,6 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.qalegend.utilities.PageUtility;
+
 public class BookingsPage {
 
 	WebDriver driver;
@@ -31,6 +33,8 @@ public class BookingsPage {
 	WebElement nodata_message;
 	@FindBy(xpath = "//button[@id='add_new_booking_btn']")
 	WebElement addbooking_button;
+	@FindBy(xpath="//span[@aria-labelledby=\"select2-business_location_id-container\"]")
+	WebElement Customer;
 
 	public void clickOnBookingsOption() {
 
@@ -63,6 +67,12 @@ public class BookingsPage {
 
 		String usermessage = nodata_message.getText();
 		return usermessage;
+	}
+	
+	public void selectCustomerDropDownBox() {
+		
+		PageUtility pageutility = new PageUtility();
+		pageutility.selectByVisibleText(Customer, "Shoney (12)");
 	}
 
 }

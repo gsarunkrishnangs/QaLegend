@@ -2,6 +2,7 @@ package com.qalegend.base;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -42,7 +43,7 @@ public class BaseFile {
 
 		initializeBrowser(browser_name);
 		driver.get(url);
-	    //WaitUtility
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));
 	}
 
 	@AfterMethod

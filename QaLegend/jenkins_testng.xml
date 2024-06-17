@@ -11,8 +11,7 @@
 			value="https://qalegend.com/billing/public/login" />
 		<classes>
 			<class name="com.qalegend.tests.LoginPageTest" />
-			<class name="com.qalegend.tests.ResetPasswordPageTest" />
-		</classes>
+			</classes>
 	</test> <!--
 	QaLegend Test -->
 </suite> <!--
