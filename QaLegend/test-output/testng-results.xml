@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T20:36:46 IST" name="QaLegend Suite" finished-at="2024-06-17T20:37:51 IST" duration-ms="65297">
+  <suite started-at="2024-06-18T00:02:57 IST" name="QaLegend Suite" finished-at="2024-06-18T00:03:32 IST" duration-ms="34483">
     <groups>
     </groups>
-    <test started-at="2024-06-17T20:36:46 IST" name="QaLegend Test" finished-at="2024-06-17T20:37:51 IST" duration-ms="65297">
+    <test started-at="2024-06-18T00:02:57 IST" name="QaLegend Test" finished-at="2024-06-18T00:03:32 IST" duration-ms="34483">
       <class name="com.qalegend.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:36:46 IST" name="setup" finished-at="2024-06-17T20:37:02 IST" duration-ms="15763" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:02:58 IST" name="setup" finished-at="2024-06-18T00:03:05 IST" duration-ms="7166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLogin()[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:02 IST" name="verifyUserLogin" finished-at="2024-06-17T20:37:09 IST" duration-ms="7512" status="PASS">
+        <test-method signature="verifyUserLogin()[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:05 IST" name="verifyUserLogin" finished-at="2024-06-18T00:03:11 IST" duration-ms="6547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLogin -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:09 IST" name="closeBrowser" finished-at="2024-06-17T20:37:10 IST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:11 IST" name="closeBrowser" finished-at="2024-06-18T00:03:13 IST" duration-ms="2027" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:10 IST" name="setup" finished-at="2024-06-17T20:37:24 IST" duration-ms="14237" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:13 IST" name="setup" finished-at="2024-06-18T00:03:18 IST" duration-ms="5147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:24 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-17T20:37:25 IST" duration-ms="1289" status="PASS">
+        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:18 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:19 IST" duration-ms="832" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:25 IST" name="closeBrowser" finished-at="2024-06-17T20:37:25 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:19 IST" name="closeBrowser" finished-at="2024-06-18T00:03:19 IST" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:25 IST" name="setup" finished-at="2024-06-17T20:37:38 IST" duration-ms="12521" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:19 IST" name="setup" finished-at="2024-06-18T00:03:25 IST" duration-ms="5391" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:38 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-17T20:37:39 IST" duration-ms="1280" status="PASS">
+        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:25 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:26 IST" duration-ms="945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:39 IST" name="closeBrowser" finished-at="2024-06-17T20:37:39 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:26 IST" name="closeBrowser" finished-at="2024-06-18T00:03:26 IST" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:39 IST" name="setup" finished-at="2024-06-17T20:37:50 IST" duration-ms="10257" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:26 IST" name="setup" finished-at="2024-06-18T00:03:31 IST" duration-ms="4902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,7 +140,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:50 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-17T20:37:51 IST" duration-ms="1373" status="PASS">
+        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:31 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:32 IST" duration-ms="832" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-17T20:37:51 IST" name="closeBrowser" finished-at="2024-06-17T20:37:51 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:32 IST" name="closeBrowser" finished-at="2024-06-18T00:03:32 IST" duration-ms="190" status="PASS">
           <params>
             <param index="0">
               <value>

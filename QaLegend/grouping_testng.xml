@@ -8,7 +8,7 @@
 		</run>
 	</groups>
 	<listeners>
-		<listener class-name="com.qalegend.listeners.AnnotationTransformer"></listener>
+		<listener class-name="com.qalegend.listeners.AnnotationTransformer"/>
 	</listeners>
 	<test name="QaLegend Test">
 		<parameter name="browser" value="Chrome" />
