@@ -28,7 +28,7 @@ public class HomePageTest extends BaseFile {
 
 	}
 
-	@Test(groups = "Regression")
+	@Test(groups="Regression")
 	public void verifyUserLoginDate() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);

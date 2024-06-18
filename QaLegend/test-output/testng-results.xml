@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T00:02:57 IST" name="QaLegend Suite" finished-at="2024-06-18T00:03:32 IST" duration-ms="34483">
+  <suite started-at="2024-06-19T00:00:41 IST" name="QaLegend Suite" finished-at="2024-06-19T00:01:12 IST" duration-ms="30995">
     <groups>
+      <group name="Sanity">
+        <method signature="ResetPasswordPageTest.veriyErrorMessageWithInvalidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" name="veriyErrorMessageWithInvalidMailId" class="com.qalegend.tests.ResetPasswordPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="HomePageTest.verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@5af3afd9]" name="verifyUserLoginDate" class="com.qalegend.tests.HomePageTest"/>
+        <method signature="ResetPasswordPageTest.veriyErrorMessageWithInvalidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" name="veriyErrorMessageWithInvalidMailId" class="com.qalegend.tests.ResetPasswordPageTest"/>
+        <method signature="ResetPasswordPageTest.veriySuccessMessageWithValidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" name="veriySuccessMessageWithValidMailId" class="com.qalegend.tests.ResetPasswordPageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-06-18T00:02:57 IST" name="QaLegend Test" finished-at="2024-06-18T00:03:32 IST" duration-ms="34483">
-      <class name="com.qalegend.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:02:58 IST" name="setup" finished-at="2024-06-18T00:03:05 IST" duration-ms="7166" status="PASS">
+    <test started-at="2024-06-19T00:00:41 IST" name="QaLegend Test" finished-at="2024-06-19T00:01:12 IST" duration-ms="30995">
+      <class name="com.qalegend.tests.ResetPasswordPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:00:55 IST" name="setup" finished-at="2024-06-19T00:01:02 IST" duration-ms="6670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,22 +31,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLogin()[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:05 IST" name="verifyUserLogin" finished-at="2024-06-18T00:03:11 IST" duration-ms="6547" status="PASS">
+        <test-method signature="veriyErrorMessageWithInvalidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:01:02 IST" name="veriyErrorMessageWithInvalidMailId" finished-at="2024-06-19T00:01:03 IST" duration-ms="1613" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:11 IST" name="closeBrowser" finished-at="2024-06-18T00:03:13 IST" duration-ms="2027" status="PASS">
+        </test-method> <!-- veriyErrorMessageWithInvalidMailId -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:01:03 IST" name="closeBrowser" finished-at="2024-06-19T00:01:04 IST" duration-ms="199" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLogin status=SUCCESS method=LoginPageTest.verifyUserLogin()[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83] output={null}]]]>
+                <![CDATA[[TestResult name=veriyErrorMessageWithInvalidMailId status=SUCCESS method=ResetPasswordPageTest.veriyErrorMessageWithInvalidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:13 IST" name="setup" finished-at="2024-06-18T00:03:18 IST" duration-ms="5147" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:01:04 IST" name="setup" finished-at="2024-06-19T00:01:09 IST" duration-ms="5842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,34 +62,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:18 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:19 IST" duration-ms="832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="veriySuccessMessageWithValidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:01:09 IST" name="veriySuccessMessageWithValidMailId" finished-at="2024-06-19T00:01:12 IST" duration-ms="2155" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:19 IST" name="closeBrowser" finished-at="2024-06-18T00:03:19 IST" duration-ms="229" status="PASS">
+        </test-method> <!-- veriySuccessMessageWithValidMailId -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de]" started-at="2024-06-19T00:01:12 IST" name="closeBrowser" finished-at="2024-06-19T00:01:12 IST" duration-ms="226" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83] output={null}]]]>
+                <![CDATA[[TestResult name=veriySuccessMessageWithValidMailId status=SUCCESS method=ResetPasswordPageTest.veriySuccessMessageWithValidMailId()[pri:0, instance:com.qalegend.tests.ResetPasswordPageTest@36bc55de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:19 IST" name="setup" finished-at="2024-06-18T00:03:25 IST" duration-ms="5391" status="PASS">
+      </class> <!-- com.qalegend.tests.ResetPasswordPageTest -->
+      <class name="com.qalegend.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.HomePageTest@5af3afd9]" started-at="2024-06-19T00:00:41 IST" name="setup" finished-at="2024-06-19T00:00:49 IST" duration-ms="7704" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,77 +95,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:25 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:26 IST" duration-ms="945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@5af3afd9]" started-at="2024-06-19T00:00:49 IST" name="verifyUserLoginDate" finished-at="2024-06-19T00:00:55 IST" duration-ms="6210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:26 IST" name="closeBrowser" finished-at="2024-06-18T00:03:26 IST" duration-ms="232" status="PASS">
+        </test-method> <!-- verifyUserLoginDate -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.HomePageTest@5af3afd9]" started-at="2024-06-19T00:00:55 IST" name="closeBrowser" finished-at="2024-06-19T00:00:55 IST" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserLoginDate status=SUCCESS method=HomePageTest.verifyUserLoginDate()[pri:0, instance:com.qalegend.tests.HomePageTest@5af3afd9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:26 IST" name="setup" finished-at="2024-06-18T00:03:31 IST" duration-ms="4902" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://qalegend.com/billing/public/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:31 IST" name="verifyUserLoginWithInvalidCredentials" data-provider="InvalidLoginUserCredentials" finished-at="2024-06-18T00:03:32 IST" duration-ms="832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[arun@1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83]" started-at="2024-06-18T00:03:32 IST" name="closeBrowser" finished-at="2024-06-18T00:03:32 IST" duration-ms="190" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyUserLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.qalegend.tests.LoginPageTest@7188af83] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qalegend.tests.LoginPageTest -->
+      </class> <!-- com.qalegend.tests.HomePageTest -->
     </test> <!-- QaLegend Test -->
   </suite> <!-- QaLegend Suite -->
 </testng-results>

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qalegend.utilities.PageUtility;
+
 public class UsersPage {
 
 	WebDriver driver;
@@ -39,9 +41,10 @@ public class UsersPage {
 	WebElement search_box;
 	@FindBy(xpath = "//td[text()='Mercy.Okuneva']")
 	WebElement name_list;
-	@FindBy(xpath="//i[@class='fa fa-dashboard']//following-sibling::span")
+	@FindBy(xpath = "//i[@class='fa fa-dashboard']//following-sibling::span")
 	WebElement home_option;
-	
+	@FindBy(xpath = "//span[@aria-labelledby='select2-role-container']")
+	WebElement role_combobox;
 
 	public void clickOnAddButton() {
 
@@ -70,6 +73,12 @@ public class UsersPage {
 
 		email_textbox.sendKeys(email);
 
+	}
+
+	public void selectRoleDropDownBox() {
+
+		PageUtility pageutility = new PageUtility();
+		pageutility.selectByVisibleText(role_combobox, "Supervisor");
 	}
 
 	public void enterNewUserName(String uname) {
@@ -112,9 +121,9 @@ public class UsersPage {
 		String userResult = name_list.getText();
 		return userResult;
 	}
-	
+
 	public HomePage clickOnHomeOption() {
-		
+
 		home_option.click();
 		return new HomePage(driver);
 	}

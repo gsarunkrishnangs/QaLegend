@@ -1,5 +1,7 @@
 package com.qalegend.constants;
 
+import java.io.File;
+
 public class Constants {
 	
 	public static final String TEST_DATA_EXCELPATH = "\\src\\main\\resources\\ExcelFiles\\TestData.xlsx";
@@ -12,5 +14,5 @@ public class Constants {
 	public static final String BOOKINGS_PAGE = "BookingsPage";
 	public static final String ADDNEWBOOKING_PAGE = "AddNewBookingPage";
 	public static final String PRODUCTS_PAGE = "ProductsPage";
-	
+	public static final String CONFIGFILE = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "config.properties";
 }

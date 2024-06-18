@@ -4,25 +4,23 @@
   <listeners>
     <listener class-name="com.qalegend.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Chrome Test(failed)">
+  <test thread-count="5" name="QaLegend Test(failed)">
     <parameter name="baseurl" value="https://qalegend.com/billing/public/login"/>
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.qalegend.tests.LoginPageTest">
+      <class name="com.qalegend.tests.HomePageTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyUserLogin"/>
-          <include name="setup"/>
-          <include name="verifyUserLoginWithInvalidCredentials"/>
-        </methods>
-      </class> <!-- com.qalegend.tests.LoginPageTest -->
-      <class name="com.qalegend.tests.ResetPasswordPageTest">
-        <methods>
-          <include name="veriyErrorMessageWithInvalidMailId"/>
-          <include name="closeBrowser"/>
+          <include name="verifyUserLoginDate"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qalegend.tests.ResetPasswordPageTest -->
+      </class> <!-- com.qalegend.tests.HomePageTest -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- QaLegend Test(failed) -->
 </suite> <!-- Failed suite [QaLegend Suite] -->
