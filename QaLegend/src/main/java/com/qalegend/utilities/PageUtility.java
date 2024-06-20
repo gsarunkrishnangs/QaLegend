@@ -12,31 +12,32 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class PageUtility {
-	
+
 	WebDriver driver;
 	JavascriptExecutor js;
 
-	/*public PageUtility(WebDriver driver) {
-		this.driver = driver;
-		js = (JavascriptExecutor) driver;
-	}*/
+	/*
+	 * public PageUtility(WebDriver driver) { this.driver = driver; js =
+	 * (JavascriptExecutor) driver; }
+	 */
 
-	public void selectByValue(WebElement element,String value) {
-		Select select =new Select(element);
-		select.selectByValue(value);
-		
-	}
-	
-	public void selectByVisibleText(WebElement element,String visibleText) {
-		Select select =new Select(element);
-		select.selectByVisibleText(visibleText);
-		
-	}
-	public void selectDropDownByIndexValue(WebElement element ,int value){
+	public void selectByValue(WebElement element, String value) {
 		Select select = new Select(element);
-		select.selectByIndex(value);	
+		select.selectByValue(value);
+
 	}
-	
+
+	public void selectByVisibleText(WebElement element, String visibleText) {
+		Select select = new Select(element);
+		select.selectByVisibleText(visibleText);
+
+	}
+
+	public void selectDropDownByIndexValue(WebElement element, int value) {
+		Select select = new Select(element);
+		select.selectByIndex(value);
+	}
+
 	public boolean is_Selected(WebElement element) {
 		return element.isSelected();
 	}
@@ -82,25 +83,54 @@ public class PageUtility {
 			return true;
 		}
 	}
-	
-	public void fileUpload(WebElement element,String path) throws Exception {
-		Actions action=new Actions(driver);
-		Robot robot=new Robot();
-		Thread.sleep(1000);
-		action.moveToElement(element).click().perform();
-		StringSelection ss = new StringSelection(path);                             //for copying filepath to clipboard
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		robot.delay(2000);
-		robot.keyPress(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_CONTROL);
-		robot.keyRelease(KeyEvent.VK_V);
-		robot.delay(2000);
-		robot.keyPress(KeyEvent.VK_ENTER);
-		robot.keyRelease(KeyEvent.VK_ENTER);
-			
-		}
+
+	public void contextClick(WebElement element, WebDriver driver) {
+		Actions actions = new Actions(driver);
+		actions.contextClick(element).perform();
+	}
+
+	public void moveToElement(WebElement element, WebDriver driver) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).perform();
+	}
+
+	public void doubleClick(WebElement element, WebDriver driver) {
+		Actions actions = new Actions(driver);
+		actions.doubleClick(element).perform();
+	}
+
+	public void elementTODragAndDrop(WebElement elementDragged, WebElement elementPlaced) {
+		Actions actions = new Actions(driver);
+		actions.dragAndDrop(elementDragged, elementPlaced).perform();
+	}
+
+	public void javaScriptExecutorClick(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click;", element);
+	}
+
+	public void javaScriptExecutorScrollInToView(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+
+	public void javaScriptExecutorScrollForWard(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+	}
+
+	public void javaScriptExecutorScrollBackWard(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-350)", "");
+	}
+
+	public String toGetAttributeValue(WebElement element, String attribute) {
+		String attributeValue = element.getAttribute(attribute);
+		return attributeValue;
+	}
+
+	public void navigateToBack(WebDriver driver) {
+		driver.navigate().back();
+	}
+
 }
-
-
-
