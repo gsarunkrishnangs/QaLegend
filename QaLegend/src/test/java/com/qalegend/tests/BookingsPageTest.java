@@ -17,7 +17,7 @@ import com.qalegend.pages.UserManagementPage;
 import com.qalegend.utilities.ExcelReaderUtility;
 
 public class BookingsPageTest extends BaseFile {
-	@Test
+	@Test(description = "Verification of empty booking list")
 	public void verifyBookingListWithoutAnyBooking() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);

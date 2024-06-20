@@ -16,7 +16,7 @@ import com.qalegend.utilities.ExcelReaderUtility;
 
 public class LoginPageTest extends BaseFile {
 
-	@Test(retryAnalyzer = ReTryAnalyzerListener.class)
+	@Test(retryAnalyzer = ReTryAnalyzerListener.class, description = "Verification of User login with valid credentials")
 	public void verifyUserLogin() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
@@ -31,7 +31,7 @@ public class LoginPageTest extends BaseFile {
 
 	}
 
-	@Test(dataProvider = "InvalidLoginUserCredentials", dataProviderClass = DataProviderUtility.class)
+	@Test(dataProvider = "InvalidLoginUserCredentials", dataProviderClass = DataProviderUtility.class, description = "Verification of User login with invalid credentials")
 	public void verifyUserLoginWithInvalidCredentials(String username, String password) {
 
 		LoginPage login = new LoginPage(driver);

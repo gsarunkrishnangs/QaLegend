@@ -9,14 +9,23 @@
     <parameter name="browser" value="Chrome"/>
     <groups>
       <run>
-        <include name="Sanity"/>
         <include name="Regression"/>
+        <include name="Sanity"/>
       </run>
     </groups>
     <classes>
+      <class name="com.qalegend.tests.ResetPasswordPageTest">
+        <methods>
+          <include name="veriyErrorMessageWithInvalidMailId"/>
+          <include name="closeBrowser"/>
+          <include name="veriySuccessMessageWithValidMailId"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qalegend.tests.ResetPasswordPageTest -->
       <class name="com.qalegend.tests.HomePageTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="VerifyHomePageTitle"/>
           <include name="verifyUserLoginDate"/>
           <include name="setup"/>
         </methods>

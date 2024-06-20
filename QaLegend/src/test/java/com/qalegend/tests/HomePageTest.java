@@ -13,7 +13,7 @@ import com.qalegend.pages.LoginPage;
 import com.qalegend.utilities.ExcelReaderUtility;
 
 public class HomePageTest extends BaseFile {
-	@Test(groups = "Sanity")
+	@Test(groups = {"Sanity"}, description = "Verification of home page title")
 	public void VerifyHomePageTitle() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
@@ -28,7 +28,7 @@ public class HomePageTest extends BaseFile {
 
 	}
 
-	@Test(groups="Regression")
+	@Test(groups= {"Regression"}, description = "Verification of user login date" )
 	public void verifyUserLoginDate() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);

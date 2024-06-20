@@ -16,12 +16,8 @@ public class PageUtility {
 	WebDriver driver;
 	JavascriptExecutor js;
 
-	/*
-	 * public PageUtility(WebDriver driver) { this.driver = driver; js =
-	 * (JavascriptExecutor) driver; }
-	 */
-
-	public void selectByValue(WebElement element, String value) {
+	
+    public void selectByValue(WebElement element, String value) {
 		Select select = new Select(element);
 		select.selectByValue(value);
 

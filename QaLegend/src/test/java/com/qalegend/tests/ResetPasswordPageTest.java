@@ -15,7 +15,7 @@ import com.qalegend.pages.ResetPasswordPage;
 import com.qalegend.utilities.ExcelReaderUtility;
 
 public class ResetPasswordPageTest extends BaseFile {
-	@Test(groups= {"Sanity","Regression"})
+	@Test(groups= {"Sanity","Regression"}, description = "Invalid mail id verification")
 	public void veriyErrorMessageWithInvalidMailId() {
 
 		String emailId = ExcelReaderUtility.getStringData(0, 0, Constants.RESETPASSWORD_PAGE);
@@ -29,7 +29,7 @@ public class ResetPasswordPageTest extends BaseFile {
 
 	}
 
-	@Test(groups="Regression")
+	@Test(groups= {"Regression"}, description = "Valid mail id verification")
 	public void veriySuccessMessageWithValidMailId() {
 
 		String emailId = ExcelReaderUtility.getStringData(0, 2, Constants.RESETPASSWORD_PAGE);

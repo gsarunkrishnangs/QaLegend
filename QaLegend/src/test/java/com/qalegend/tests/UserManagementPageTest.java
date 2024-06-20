@@ -22,7 +22,7 @@ import com.qalegend.pages.UserManagementPage;
 import com.qalegend.utilities.ExcelReaderUtility;
 
 public class UserManagementPageTest extends BaseFile {
-	@Test
+	@Test(description = "Verification of User options availability")
 	public void verifyUserManagementUserOptions() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
@@ -33,8 +33,7 @@ public class UserManagementPageTest extends BaseFile {
 		HomePage home = login.clickOnLoginButton();
 		UserManagementPage usermanagement = home.clickOnEndTourButton();
 		usermanagement.clickOnUserManagementOption();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Assert.assertTrue(usermanagement.checkUsersOptionAvailability(), Messages.MISSING_USEROPTION);
-		
+
 	}
 }

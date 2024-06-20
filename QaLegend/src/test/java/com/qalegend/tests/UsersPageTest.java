@@ -20,8 +20,8 @@ import com.qalegend.utilities.ExcelReaderUtility;
 import com.qalegend.utilities.RandomDatasUtility;
 
 public class UsersPageTest extends BaseFile {
-	
-	@Test
+
+	@Test(groups= {"Smoke"}, description = "Verification of new user addition")
 	public void verifyAddUser() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
@@ -52,7 +52,6 @@ public class UsersPageTest extends BaseFile {
 		String commissionPercentage = ExcelReaderUtility.getIntegerData(0, 1, Constants.USERS_PAGE);
 		userpage.enterCommissionPercentage(commissionPercentage);
 		userpage.clickOnSaveButton();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String nameSearch = ExcelReaderUtility.getStringData(0, 3, Constants.USERS_PAGE);
 		userpage.enterSearchText(nameSearch);
 		String expectedUser = ExcelReaderUtility.getStringData(0, 2, Constants.USERS_PAGE);
@@ -60,10 +59,10 @@ public class UsersPageTest extends BaseFile {
 		Assert.assertEquals(actualUser, expectedUser, Messages.USERADD_FAILURE);
 
 	}
-	
-	@Test
+
+	@Test(description = "Verification of login with new user")
 	public void veriyLoginWithNewlyAddedUser() {
-		
+
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
 		String password = ExcelReaderUtility.getIntegerData(0, 1, Constants.LOGIN_PAGE);
 		LoginPage login = new LoginPage(driver);
@@ -92,7 +91,6 @@ public class UsersPageTest extends BaseFile {
 		String commissionPercentage = ExcelReaderUtility.getIntegerData(0, 1, Constants.USERS_PAGE);
 		userpage.enterCommissionPercentage(commissionPercentage);
 		userpage.clickOnSaveButton();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		HomePage homeNew = userpage.clickOnHomeOption();
 		homeNew.clickOnLoginUserNameField();
 		homeNew.clickOnSignOutButton();

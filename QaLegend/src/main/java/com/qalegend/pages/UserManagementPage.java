@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qalegend.utilities.WaitUtility;
+
 public class UserManagementPage {
 
 	WebDriver driver;
@@ -38,7 +40,9 @@ public class UserManagementPage {
 	}
 
 	public boolean checkUsersOptionAvailability() {
-
+		
+        WaitUtility waitutility = new WaitUtility();
+        waitutility.waitForElementToBeClickable(driver, users_option);
 		boolean usersOption = users_option.isDisplayed();
 		return usersOption;
 	}

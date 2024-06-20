@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="QaLegend Suite">
+<suite name="QaLegend Suite" parallel="tests" thread-count="3">
 	<listeners>
-		<listener class-name="com.qalegend.listeners.AnnotationTransformer"/>
+		<listener class-name="com.qalegend.listeners.AnnotationTransformer" />
 	</listeners>
 	<test name="LoginPage Test">
 		<parameter name="browser" value="Chrome" />
@@ -10,24 +10,22 @@
 			value="https://qalegend.com/billing/public/login" />
 		<classes>
 			<class name="com.qalegend.tests.LoginPageTest" />
-			<class name="com.qalegend.tests.ResetPasswordPageTest" />
 		</classes>
 	</test>
 	<test name="HomePage Test">
-		<parameter name="browser" value="Edge" />
+		<parameter name="browser" value="Chrome" />
 		<parameter name="baseurl"
 			value="https://qalegend.com/billing/public/login" />
 		<classes>
 			<class name="com.qalegend.tests.HomePageTest" />
 		</classes>
 	</test>
-	<test name="UserManagementPage Test">
-		<parameter name="browser" value="Firefox" />
+	<test name="ResetPage Test">
+		<parameter name="browser" value="Chrome" />
 		<parameter name="baseurl"
 			value="https://qalegend.com/billing/public/login" />
 		<classes>
-			<class name="com.qalegend.tests.UserManagementPageTest" />
-			<class name="com.qalegend.tests.UsersPageTest" />
+			<class name="com.qalegend.tests.ResetPasswordPageTest" />
 		</classes>
 	</test>
 </suite> 

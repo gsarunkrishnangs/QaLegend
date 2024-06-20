@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qalegend.utilities.PageUtility;
+import com.qalegend.utilities.WaitUtility;
 
 public class UsersPage {
 
@@ -108,6 +109,8 @@ public class UsersPage {
 	public void clickOnSaveButton() {
 
 		save_button.click();
+		WaitUtility waitutility = new WaitUtility();
+        waitutility.waitForElement(driver, search_box);
 	}
 
 	public void enterSearchText(String searchname) {

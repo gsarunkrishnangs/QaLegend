@@ -15,7 +15,7 @@ import com.qalegend.utilities.ExcelReaderUtility;
 
 public class ProductsPageTest extends BaseFile {
 
-	@Test
+	@Test(description = "Verification of Products filtering ")
 	public void VerifyProductsFilter() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
