@@ -128,5 +128,23 @@ public class PageUtility {
 	public void navigateToBack(WebDriver driver) {
 		driver.navigate().back();
 	}
+	
+	public void fileUpload(WebElement element,String path) throws Exception {
+		Actions action=new Actions(driver);
+		Robot robot=new Robot();
+		Thread.sleep(1000);
+		action.moveToElement(element).click().perform();
+		StringSelection ss = new StringSelection(path);                             //for copying filepath to clipboard
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		robot.delay(2000);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.delay(2000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+			
+		}
 
 }
