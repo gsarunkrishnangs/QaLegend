@@ -39,10 +39,14 @@ public class UserManagementPage {
 
 	}
 
+	public void waitForUsersOptionVisibility() {
+
+		WaitUtility waitutility = new WaitUtility();
+		waitutility.waitForElement(driver, users_option);
+	}
+
 	public boolean checkUsersOptionAvailability() {
-		
-        WaitUtility waitutility = new WaitUtility();
-        waitutility.waitForElementToBeClickable(driver, users_option);
+
 		boolean usersOption = users_option.isDisplayed();
 		return usersOption;
 	}

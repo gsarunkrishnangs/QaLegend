@@ -33,6 +33,7 @@ public class UserManagementPageTest extends BaseFile {
 		HomePage home = login.clickOnLoginButton();
 		UserManagementPage usermanagement = home.clickOnEndTourButton();
 		usermanagement.clickOnUserManagementOption();
+		usermanagement.waitForUsersOptionVisibility();
 		Assert.assertTrue(usermanagement.checkUsersOptionAvailability(), Messages.MISSING_USEROPTION);
 
 	}

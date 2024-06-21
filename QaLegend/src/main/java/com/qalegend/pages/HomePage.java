@@ -21,7 +21,7 @@ public class HomePage {
 	WebElement welcome_user;
 	@FindBy(xpath = "//button[@class='btn btn-default btn-sm']")
 	WebElement endtour_button;
-	@FindBy(xpath = "//span[text()='XYZ abc']")
+	@FindBy(xpath = "//a[@class='dropdown-toggle']")
 	WebElement login_username;
 	@FindBy(xpath = "//a[text()='Sign Out']")
 	WebElement signout_button;

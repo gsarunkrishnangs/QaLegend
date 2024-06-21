@@ -32,7 +32,7 @@ public class BookingsPageTest extends BaseFile {
 		String locationname = ExcelReaderUtility.getStringData(0, 0, Constants.BOOKINGS_PAGE);
 		bookings.enterLocation(locationname);
 		try {
-			bookings.clickOnEnterKey();
+			bookings.enterKeyPress();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

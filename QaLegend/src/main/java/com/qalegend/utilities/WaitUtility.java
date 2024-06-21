@@ -15,6 +15,7 @@ public class WaitUtility {
 	public static final long IMPLICIT_WAIT = 5;
 	public static final long EXPLICIT_WAIT = 20;
 	public static final long PAGELOAD_WAIT = 20;
+	public static final long POLLING_WAIT = 5;
 
 	public void waitUsingImplicitWait(WebDriver driver) {
 
@@ -38,7 +39,7 @@ public class WaitUtility {
 	public void waitForElementUsingFluentWait(WebDriver driver, WebElement element) {
 
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(PAGELOAD_WAIT))
-				.pollingEvery(Duration.ofSeconds(PAGELOAD_WAIT)).ignoring(NoSuchElementException.class);
+				.pollingEvery(Duration.ofSeconds(POLLING_WAIT)).ignoring(NoSuchElementException.class);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
 	}

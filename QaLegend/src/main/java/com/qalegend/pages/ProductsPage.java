@@ -12,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.qalegend.utilities.PageUtility;
 import com.qalegend.utilities.WaitUtility;
 
 public class ProductsPage {
@@ -69,9 +70,23 @@ public class ProductsPage {
 
 	}
 
+	public void setCategoryComboboxValue() {
+
+		PageUtility pageutility = new PageUtility();
+		pageutility.setComboboxValue();
+
+	}
+
 	public void clickOnProductTypeCombobox() {
 
 		category_combobox.click();
+
+	}
+
+	public void setProductTypeComboboxValue() {
+
+		PageUtility pageutility = new PageUtility();
+		pageutility.setComboboxValue();
 
 	}
 
@@ -81,72 +96,30 @@ public class ProductsPage {
 
 	}
 
+	public void setUnitComboboxValue() {
+
+		PageUtility pageutility = new PageUtility();
+		pageutility.setComboboxValue();
+
+	}
+
 	public void clickOnBrandCombobox() {
 
 		brand_combobox.click();
 
 	}
 
-	public void setProductTypeComboboxValue() {
-
-		Robot r = null;
-		try {
-			r = new Robot();
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
-	}
-
-	public void setCategoryComboboxValue() {
-
-		Robot r = null;
-		try {
-			r = new Robot();
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
-	}
-
-	public void setUnitComboboxValue() {
-
-		Robot r = null;
-		try {
-			r = new Robot();
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
-	}
-
 	public void setBrandComboboxValue() {
 
-		Robot r = null;
-		try {
-			r = new Robot();
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
+		PageUtility pageutility = new PageUtility();
+		pageutility.setComboboxValue();
+
 	}
-	
+
 	public void waitForMessageLoading() {
-		
+
 		WaitUtility waitutility = new WaitUtility();
-        waitutility.waitForElement(driver, searchresult_message);
+		waitutility.waitForElement(driver, searchresult_message);
 	}
 
 	public String getSearchResultMessage() {

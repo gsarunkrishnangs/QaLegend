@@ -1,5 +1,6 @@
 package com.qalegend.utilities;
 
+import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -146,5 +147,32 @@ public class PageUtility {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 			
 		}
+	
+	public void clickOnEnterKey() {
+
+		Robot r = null;
+		try {
+			r = new Robot();
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+	}
+	
+	public void setComboboxValue() {
+
+		Robot r = null;
+		try {
+			r = new Robot();
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+	}
+
 
 }

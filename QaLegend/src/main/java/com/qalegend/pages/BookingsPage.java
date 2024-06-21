@@ -51,16 +51,10 @@ public class BookingsPage {
 		businesslocation_searchbox.sendKeys(locationname);
 	}
 
-	public void clickOnEnterKey() {
+	public void enterKeyPress() {
 
-		Robot r = null;
-		try {
-			r = new Robot();
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
+		PageUtility pageutility = new PageUtility();
+		pageutility.clickOnEnterKey();
 	}
 
 	public String getNoDataAvailableMessageText() {
