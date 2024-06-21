@@ -109,6 +109,11 @@ public class UsersPage {
 	public void clickOnSaveButton() {
 
 		save_button.click();
+		
+	}
+	
+	public void waitForSearchBoxVisibility() {
+		
 		WaitUtility waitutility = new WaitUtility();
         waitutility.waitForElement(driver, search_box);
 	}

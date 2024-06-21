@@ -12,6 +12,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.qalegend.utilities.WaitUtility;
+
 public class ProductsPage {
 
 	WebDriver driver;
@@ -139,6 +141,12 @@ public class ProductsPage {
 		r.keyRelease(KeyEvent.VK_DOWN);
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
+	}
+	
+	public void waitForMessageLoading() {
+		
+		WaitUtility waitutility = new WaitUtility();
+        waitutility.waitForElement(driver, searchresult_message);
 	}
 
 	public String getSearchResultMessage() {

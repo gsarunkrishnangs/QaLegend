@@ -16,7 +16,7 @@ import com.qalegend.utilities.ExcelReaderUtility;
 public class ProductsPageTest extends BaseFile {
 
 	@Test(description = "Verification of Products filtering ")
-	public void VerifyProductsFilter() {
+	public void verifyProductsFilter() {
 
 		String username = ExcelReaderUtility.getStringData(0, 0, Constants.LOGIN_PAGE);
 		String password = ExcelReaderUtility.getIntegerData(0, 1, Constants.LOGIN_PAGE);
@@ -35,7 +35,7 @@ public class ProductsPageTest extends BaseFile {
 		products.setUnitComboboxValue();
 		products.clickOnBrandCombobox();
 		products.setBrandComboboxValue();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		products.waitForMessageLoading();
 		String expectedSearchMessage = ExcelReaderUtility.getStringData(0, 0, Constants.PRODUCTS_PAGE);
 		String actualSearchMessage = products.getSearchResultMessage();
 		Assert.assertEquals(actualSearchMessage, expectedSearchMessage, Messages.WRONG_FILTERRESULT);

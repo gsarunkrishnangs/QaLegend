@@ -52,6 +52,7 @@ public class UsersPageTest extends BaseFile {
 		String commissionPercentage = ExcelReaderUtility.getIntegerData(0, 1, Constants.USERS_PAGE);
 		userpage.enterCommissionPercentage(commissionPercentage);
 		userpage.clickOnSaveButton();
+		userpage.waitForSearchBoxVisibility();
 		String nameSearch = ExcelReaderUtility.getStringData(0, 3, Constants.USERS_PAGE);
 		userpage.enterSearchText(nameSearch);
 		String expectedUser = ExcelReaderUtility.getStringData(0, 2, Constants.USERS_PAGE);
@@ -91,6 +92,7 @@ public class UsersPageTest extends BaseFile {
 		String commissionPercentage = ExcelReaderUtility.getIntegerData(0, 1, Constants.USERS_PAGE);
 		userpage.enterCommissionPercentage(commissionPercentage);
 		userpage.clickOnSaveButton();
+		userpage.waitForSearchBoxVisibility();
 		HomePage homeNew = userpage.clickOnHomeOption();
 		homeNew.clickOnLoginUserNameField();
 		homeNew.clickOnSignOutButton();
